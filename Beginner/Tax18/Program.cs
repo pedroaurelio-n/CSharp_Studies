@@ -10,10 +10,10 @@ namespace Tax18
             Console.Write("Enter the product's original price: $");
             float originalPrice = float.Parse(Console.ReadLine());
 
-            float taxValue = 0.18f;
-            float totalPrice = originalPrice * (1 + taxValue);
+            float taxValue = originalPrice * 0.18f;
+            float totalPrice = originalPrice + taxValue;
 
-            Console.WriteLine($"\nTax percentage: {taxValue * 100}%");
+            Console.WriteLine($"\nTax value: ${taxValue.ToString("0.00")}");
             Console.WriteLine($"Total price: ${totalPrice.ToString("0.00")}");
 
             Console.ReadLine();
