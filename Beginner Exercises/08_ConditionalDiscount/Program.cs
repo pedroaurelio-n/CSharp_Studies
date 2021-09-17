@@ -9,7 +9,7 @@ namespace _8_ConditionalDiscount
             Console.WriteLine("This store has a 20% off sale on products that cost $500 or above");
             Console.WriteLine("But only 10% off on products under $500\n");
 
-            Console.Write("Enter the product's price: ");
+            Console.Write("Enter the product's price: $");
             float normalPrice = float.Parse(Console.ReadLine());
             float discount;
 
