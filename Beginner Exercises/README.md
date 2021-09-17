@@ -17,3 +17,5 @@
 8 - **ConditionalDiscount**: Apply 20% discount on products that cost $500 or over and 10% discount on products under $500
 
 9 - **EvenUneven**: Checks if a number is even or uneven
+
+10 - **Grade**: Displays a different message for each grade submitted
