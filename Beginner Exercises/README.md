@@ -19,3 +19,13 @@
 09 - **EvenUneven**: Checks if a number is even or uneven
 
 10 - **Grade**: Displays a different message for each grade submitted
+
+11 - **DayOfWeekSwitch**: Identify the day of the week by number with a switch structure
+
+12 - **DiscountSwitch**: Choose between 3 options of discount
+
+13 - **Multiple5**: Check if a number is a multiple of 5
+
+14 - **ConditionalSalary**: Calculate amount earned depending on a condition
+
+15 - **SimpleCalculator**: Calculate the result of 4 possible operations (addition, subtraction, multiplication & division) between 2 numbers. Structured in a loop for repetition.
