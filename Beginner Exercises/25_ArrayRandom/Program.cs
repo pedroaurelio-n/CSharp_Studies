@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _25_ArrayPositives
+namespace _25_ArrayRandom
 {
     class Program
     {
@@ -17,6 +17,11 @@ namespace _25_ArrayPositives
             }
 
             int positives = 0;
+            int negatives = 0;
+
+            int positiveSum = 0;
+            int negativeSum = 0;
+
             string arrayString = "";
 
             foreach (int number in numbers)
@@ -25,14 +30,25 @@ namespace _25_ArrayPositives
                 arrayString += ", ";
 
                 if (number > 0)
+                {
+                    positiveSum += number;
                     positives++;
+                }
+
+                else
+                {
+                    negativeSum += number;
+                    negatives--;
+                }
             }
 
-            arrayString.Substring(arrayString.Length - 2);
+            arrayString = arrayString.Remove(arrayString.Length - 2);
 
 
             Console.WriteLine($"\nIn the array: {arrayString}");
-            Console.WriteLine($"There are {positives} positive numbers!");
+            Console.WriteLine($"There are {positives} positive numbers and {negatives} negative numbers!");
+            Console.WriteLine($"Sum of positives = {positiveSum}");
+            Console.WriteLine($"Sum of negatives = {negativeSum}");
 
             Console.ReadKey();
         }
