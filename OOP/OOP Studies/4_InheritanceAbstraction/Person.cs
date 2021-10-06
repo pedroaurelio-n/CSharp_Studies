@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _4_Inheritance
+namespace _4_InheritanceAbstraction
 {
-    public class Person
+    public abstract class Person
     {
         public string Name { get; set; }
         public int Age { get; set; }
@@ -14,9 +14,6 @@ namespace _4_Inheritance
             return Name + " - " + Age;
         }
 
-        public virtual string GetStatus()
-        {
-            return Name + " is a Person";
-        }
+        public abstract string GetStatus();
     }
 }

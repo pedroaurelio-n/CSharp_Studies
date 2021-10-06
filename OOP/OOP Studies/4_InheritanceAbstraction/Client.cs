@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _4_Inheritance
+namespace _4_InheritanceAbstraction
 {
     public class Client : Person
     {

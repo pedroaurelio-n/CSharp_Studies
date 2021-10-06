@@ -1,15 +1,11 @@
 ﻿using System;
 
-namespace _4_Inheritance
+namespace _4_InheritanceAbstraction
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Person person = new Person();
-            person.Name = "Pedro";
-            person.Age = 20;
-
             Employee employee = new Employee();
             employee.Name = "Waldo";
             employee.Age = 22;
@@ -20,10 +16,6 @@ namespace _4_Inheritance
             client.Name = "Richard";
             client.Age = 99;
             client.Balance = 500;
-
-            Console.WriteLine(person.GetInformation());
-            Console.WriteLine(person.GetStatus());
-            Console.WriteLine();
 
             Console.WriteLine(employee.GetInformation());
             Console.WriteLine(employee.GetWage());

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _4_Inheritance
+namespace _4_InheritanceAbstraction
 {
     public class Employee : Person
     {
         public float HourRate { get; set; }
-        public int WorkHours {get; set;}
+        public int WorkHours { get; set; }
 
         public string GetWage()
         {
