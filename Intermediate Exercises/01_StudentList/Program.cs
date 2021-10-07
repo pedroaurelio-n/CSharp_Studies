@@ -9,11 +9,33 @@ namespace _01_StudentList
         {
             List<Student> studentList = new List<Student>();
 
-            studentList.Add(new Student("Pedro", 8, 10));
-            studentList.Add(new Student("Herobreno", 7, 4));
-            studentList.Add(new Student("Lalo", 7, 13));
-            studentList.Add(new Student("Steak", 2, 5));
-            studentList.Add(new Student("Tony", -2, 3));
+            Console.Write("Enter a number of students to register: ");
+            int count = int.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+
+            for (int i = 1; i <= count; i++)
+            {
+                Console.Write($"Enter student {i} name: ");
+                string name = Console.ReadLine();
+
+                studentList.Add(new Student(name));
+            }
+
+            Console.WriteLine();
+
+            foreach(Student student in studentList)
+            {
+                Console.Write($"Enter the first score for {student.Name}: ");
+                student.Score1 = int.Parse(Console.ReadLine());
+
+                Console.Write($"Enter the second score for {student.Name}: ");
+                student.Score2 = int.Parse(Console.ReadLine());
+
+                Console.WriteLine();
+            }
+
+            Console.WriteLine();
 
             foreach (Student student in studentList)
             {

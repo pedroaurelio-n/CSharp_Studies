@@ -48,11 +48,11 @@ namespace _01_StudentList
         }
 
         public Student() { }
-        public Student(string name, int score1, int score2)
+        public Student(string name)
         {
             Name = name;
-            Score1 = score1;
-            Score2 = score2;
+            Score1 = 0;
+            Score2 = 0;
         }
 
         public float CalculateAverageScore()
